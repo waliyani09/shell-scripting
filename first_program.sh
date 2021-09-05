@@ -17,7 +17,7 @@ echo $STRING
 # In order to enable escape sequencing, we add -e in front of echo command.
 # For example: echo -e "First message\nSecondmessage." ->This is for new line character.
 #4 Printing the text in different colors.
-# This can be done by adding \e[m in the message.
+# This can be done by adding \e[COLORCODEm in the message.
 # The color codes are from the range as follows:
 # 31 red
 # 32 green
@@ -25,5 +25,9 @@ echo $STRING
 # 34 blue 
 # 35 magenta 
 # 36 cyan
+# 0 no color. Please see that you need to disable the color as well.
 # For example:
 echo -e "\e[31mThe text in red color."
+#5 Increasing the brightness and making the bold color
+# Syntax: This can be done by adding \e[1;COLORCODEm in the message.
+# 
