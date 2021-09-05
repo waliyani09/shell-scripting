@@ -13,3 +13,6 @@ echo $STRING
 # have the message "Hello World" on the screen. 
 # In order to refer to a variable, we print ${VARIABLE_NAME}.
 # Alternatively, you can also use printf command to print the output on the screen.
+#3 Using an escape sequence in bash scripting echo command.
+# In order to enable escape sequencing, we add -e in front of echo command.
+# For example: echo -e "First message\nSecondmessage." ->This is for new line character.
