@@ -30,4 +30,16 @@ echo $STRING
 echo -e "\e[31mThe text in red color."
 #5 Increasing the brightness and making the bold color
 # Syntax: This can be done by adding \e[1;COLORCODEm in the message.
-# 
+# -----------------------------VARIABLES-------------------------------------------------------------
+# If we assign a name to a set of data, it is known as variable.
+# We dont need to explicitly specify data type, just name the variable. 
+# Anyways, shell will always consider every data type as a String. You have to work accordingly.
+# If your data consist of any special character, use double quotes to specify the entire data
+# For example if x=1*2, then write it as x= "1*2"
+# In bash, we access variable as $VARIABLE_NAME or ${VARIABLE_NAME}
+# ----------GETTING THE DATA DYNAMICALLY----------------------------------
+# For example, DATE = {current_date}, you can say DATE = $(date +%F)
+# In bash, you can use () to use a command. In this case, we are using date command.
+#  echo Welcome! Today's date is $DATE 
+# ---------------ARITHMETIC SYNTAX------------------------------------------
+# ((Anything inside double circular brackets will be an arithmetic operation))
