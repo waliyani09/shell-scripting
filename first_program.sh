@@ -16,3 +16,14 @@ echo $STRING
 #3 Using an escape sequence in bash scripting echo command.
 # In order to enable escape sequencing, we add -e in front of echo command.
 # For example: echo -e "First message\nSecondmessage." ->This is for new line character.
+#4 Printing the text in different colors.
+# This can be done by adding \e[m in the message.
+# The color codes are from the range as follows:
+# 31 red
+# 32 green
+# 33 yellow
+# 34 blue 
+# 35 magenta 
+# 36 cyan
+# For example:
+echo -e "\e[31mThe text in red color."
