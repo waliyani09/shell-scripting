@@ -7,3 +7,9 @@ echo $STRING
 # It is usually denoted by "#!"
 # She-bang is usually used to denote the path where the shell script is installed.
 # It is an indicator to show where to interpret the given file.
+#---------------------------------------------------------------------------------
+#2 Printing messages on a screen.
+# echo command is used to print message on a screen. If you use echo "Hello World!", then you can 
+# have the message "Hello World" on the screen. 
+# In order to refer to a variable, we print ${VARIABLE_NAME}.
+# Alternatively, you can also use printf command to print the output on the screen.
