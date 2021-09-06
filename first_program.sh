@@ -43,3 +43,5 @@ echo -e "\e[31mThe text in red color."
 #  echo Welcome! Today's date is $DATE 
 # ---------------ARITHMETIC SYNTAX------------------------------------------
 # ((Anything inside double circular brackets will be an arithmetic operation))
+#------------------------FUNCTIONS-----------------------------------------
+# We will continue this project on new file called roboshop.sh
