@@ -1,10 +1,22 @@
-echo "Installing MongoDB"
-echo "Installing Catalogue"
-echo "Installing Redis"
-echo "Installing User"
-echo "Installing Cart"
-echo "Installing MySQL"
-echo "Installing Shipping"
-echo "Installing RabbitMQ"
-echo "Installing Payment"
-echo "Installing Frontend"
+help:
+		@fgrep -h "##" $(MAKEFILE_LIST)
+catalogue:
+		@bash components/catalogue.sh
+mongodb:
+		@bash components/mongodb.sh
+redis:
+		@bash components/redis.sh
+user:
+		@bash components/user.sh
+cart:
+		@bash components/cart.sh
+mysql:
+		@bash components/mysql.sh
+shipping:
+		@bash components/shipping.sh
+rabbitmq:
+		@bash components/rabbitmq.sh
+payment:
+		@bash components/payment.sh
+frontend:
+		@bash components/frontend.sh
