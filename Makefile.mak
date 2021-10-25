@@ -1,22 +1,22 @@
-help:
-		@fgrep -h "##" $(MAKEFILE_LIST)
-catalogue:
+help:			##Welcome to the help menu
+		@fgrep -h "##" $(MAKEFILE_LIST) | grep -v fgrep
+catalogue:		##Install catalogue
 		@bash components/catalogue.sh
-mongodb:
+mongodb:		##Install MongoDB
 		@bash components/mongodb.sh
-redis:
+redis:			##Install Redis
 		@bash components/redis.sh
-user:
+user:			##Install user
 		@bash components/user.sh
-cart:
+cart:			##Install cart
 		@bash components/cart.sh
-mysql:
+mysql:			##Install MySQL
 		@bash components/mysql.sh
-shipping:
+shipping:		##Install shipping
 		@bash components/shipping.sh
-rabbitmq:
+rabbitmq:		##Install rabbitMQ
 		@bash components/rabbitmq.sh
-payment:
+payment:		##Install payment
 		@bash components/payment.sh
-frontend:
+frontend:		##Install payment
 		@bash components/frontend.sh
