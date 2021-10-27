@@ -79,8 +79,8 @@ then
     echo "Input is $input"
 fi
 
-if [$? eq 0] #Remember that $? will give the exit status of last command executed
-then
+if [$? -eq 0] #Remember that $? will give the exit status of last command executed
+then          #-eq means equal to in number 
     echo "Successful"
 else   
     echo "Not Successful"
