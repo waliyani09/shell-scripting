@@ -45,3 +45,43 @@ echo -e "\e[31mThe text in red color."
 # ((Anything inside double circular brackets will be an arithmetic operation))
 #------------------------FUNCTIONS-----------------------------------------
 # We will continue this project on new file called roboshop.sh
+#-------------------GETTING AN INPUT FROM THE USER--------------------------
+#Use the read command
+#Syntax: read -p "Your_message_in_console" variable_name
+#For example:
+read -p "Please enter your name" name
+echo "Hello $name"
+exit 0
+
+#------------------IF ELSE CONDITIONAL STATEMENTS---------------------------
+#Simple conditional statements:
+# if [condition]
+#then 
+#   statements_to_be_executed
+#fi
+read -p "Please enter your name:" input
+if ['-z' "$input"]
+then
+    echo "Error! No input provided"
+    exit 1
+fi
+echo "Hello $input"
+#if else example
+#Syntax: 
+#if [condition]
+#then
+#   statements_to_be_executed
+#else
+#   statements_to_be_executed
+#fi
+if ["$input" == "ABC"]
+then
+    echo "Input is $input"
+fi
+
+if [$? eq 0] #Remember that $? will give the exit status of last command executed
+then
+    echo "Successful"
+else   
+    echo "Not Successful"
+fi
