@@ -85,3 +85,4 @@ then          #-eq means equal to in number
 else   
     echo "Not Successful"
 fi
+#-------------FUNCTIONS IN SHELL SCRIPTING--------------------------------------------
